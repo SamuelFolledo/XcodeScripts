@@ -1,5 +1,4 @@
 # Image Size Generator for Xcode Assets
-=====================================
 
 This script is designed to help manage image sizes in Xcode asset catalogs. It iterates through each imageset in a specified `.xcassets` folder, checks the existing image sizes based on the `Contents.json` files, and generates missing sizes by resizing the largest existing image.
 
@@ -24,7 +23,7 @@ This script simplifies the process of maintaining consistent image sizes across 
 To run this script, you need to install the following libraries:
 
 - **Pillow**: For image processing and resizing.
-pip install Pillow
+`pip install Pillow`
 
 
 ## How to Use
@@ -34,8 +33,8 @@ pip install Pillow
 2. **Run the Script**:
  Open a terminal and navigate to the directory containing the script. You can execute the script by dragging the script file into the terminal, followed by the path to your `.xcassets` folder.
 
-  Example:
-    python image_size_generator.py /path/to/your/xcassets/folder
+Example:
+`python image_size_generator.py /path/to/your/xcassets/folder`
 
 
 Alternatively, you can drag the script file into the terminal, type a space, and then drag the `.xcassets` folder into the terminal to execute it.
