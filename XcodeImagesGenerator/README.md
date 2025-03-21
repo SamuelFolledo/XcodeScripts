@@ -33,22 +33,31 @@ or for Python3
 
 ## How to Use
 1. **Install Required Libraries**:
+ 
  Run the installation command for Pillow as shown above.
 
-2. **Run the Script**:
- Open a terminal and navigate to the directory containing the script. You can execute the script by dragging the script file into the terminal, followed by the path to your `.xcassets` folder.
+2. **Navigate to the script file**
+  
+  Open a terminal and navigate to the directory containing the script. 
+
+Example: 
+`cd `
+
+3. **Run the Script**:
+ 
+ You can execute the script by dragging the script file into the terminal, followed by the path to your `.xcassets` folder.
 
 Example:
 
-`python image_size_generator.py /path/to/your/xcassets/folder`
+`python imageSizeGenerator.py /path/to/your/xcassets/folder`
 
 or for Python3
 
-`python3 image_size_generator.py /path/to/your/xcassets/folder`
+`python3 imageSizeGenerator.py /path/to/your/xcassets/folder`
 
 Alternatively, you can drag the script file into the terminal, type a space, and then drag the `.xcassets` folder into the terminal to execute it.
 
-3. **Verify Execution**:
+4. **Verify Execution**:
 The script will generate missing image sizes and print the names of the generated images.
 
 ## Troubleshooting
