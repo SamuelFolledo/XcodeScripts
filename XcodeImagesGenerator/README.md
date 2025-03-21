@@ -41,7 +41,7 @@ or for Python3
   Open a terminal and navigate to the directory containing the script. 
 
 Example: 
-`cd `
+`cd imageSizeGenerator.py <path to imageSizeGenerator.py file>`
 
 3. **Run the Script**:
  
