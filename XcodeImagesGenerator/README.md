@@ -23,7 +23,12 @@ This script simplifies the process of maintaining consistent image sizes across 
 To run this script, you need to install the following libraries:
 
 - **Pillow**: For image processing and resizing.
+
 `pip install Pillow`
+
+or for Python3
+
+`pip3 install Pillow`
 
 
 ## How to Use
@@ -34,8 +39,12 @@ To run this script, you need to install the following libraries:
  Open a terminal and navigate to the directory containing the script. You can execute the script by dragging the script file into the terminal, followed by the path to your `.xcassets` folder.
 
 Example:
+
 `python image_size_generator.py /path/to/your/xcassets/folder`
 
+or for Python3
+
+`python3 image_size_generator.py /path/to/your/xcassets/folder`
 
 Alternatively, you can drag the script file into the terminal, type a space, and then drag the `.xcassets` folder into the terminal to execute it.
 
