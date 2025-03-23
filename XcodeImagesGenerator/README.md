@@ -18,6 +18,7 @@ This script simplifies the process of maintaining consistent image sizes across 
 - **Automated Size Generation**: Automatically generates missing image sizes (1x, 2x, 3x) based on the largest existing image.
 - **JSON Parsing**: Parses `Contents.json` files to determine existing image sizes.
 - **Flexible Resizing**: Resizes images while maintaining aspect ratio.
+- **Nested Folder Support**: Recursively processes all imagesets within the specified `.xcassets` folder.
 
 ## Libraries to Install
 To run this script, you need to install the following libraries:
