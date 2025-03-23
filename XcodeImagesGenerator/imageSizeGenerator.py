@@ -121,7 +121,7 @@ def update_contents_json(json_path, scales, undo_log):
 
 def process_imageset(dir_path, undo_log):
     """Process an imageset directory."""
-    if os.path.exists(os.path.join(dir_path, 'Contents.json')):
+    if dir_path.endswith('.imageset') and os.path.exists(os.path.join(dir_path, 'Contents.json')):
         json_path = os.path.join(dir_path, 'Contents.json')
         data, scales = parse_contents_json(json_path, undo_log)
         
@@ -253,6 +253,12 @@ def main(xcassets_folder):
                     os.remove(change['json_backup_path'])
                     print(f"Deleted backup: {change['json_backup_path']}")
         print("Changes will be kept.")
+        
+        # Warning for unexpected changes
+        print("\nWarning: If unexpected changes were made, you may need to reset your repository. Run the following commands with caution:")
+        print("git reset --hard")
+        print("git clean -fd")
+        print("These commands will discard all changes and remove untracked files. Use them only if necessary.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Generate missing image sizes in Xcode asset catalogs.')
